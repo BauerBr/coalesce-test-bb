@@ -1,0 +1,115 @@
+fileVersion: 1
+id: 301e9d1c-4e9b-4ff5-bfac-7459f137f5e6
+name: ORDERS_SRC1
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SAMPLE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9da45016-c2eb-42d9-89a4-daa8c6c5764f
+          stepCounter: 301e9d1c-4e9b-4ff5-bfac-7459f137f5e6
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: O_ORDERKEY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: afe6a6c7-5582-44fc-9959-3bb4bafcdb18
+          stepCounter: 301e9d1c-4e9b-4ff5-bfac-7459f137f5e6
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: O_CUSTKEY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b9faee7-427f-4380-9168-9dcd4ba566d9
+          stepCounter: 301e9d1c-4e9b-4ff5-bfac-7459f137f5e6
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: O_ORDERSTATUS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0aeb5850-1450-4a54-a37c-9ff3009064ee
+          stepCounter: 301e9d1c-4e9b-4ff5-bfac-7459f137f5e6
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: O_TOTALPRICE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58c8b0f8-755a-4ddb-bbbc-030a6b610d72
+          stepCounter: 301e9d1c-4e9b-4ff5-bfac-7459f137f5e6
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: O_ORDERDATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SAMPLE', 'ORDERS_SRC1') }}
+  name: ORDERS_SRC1
+  schema: ""
+  sqlType: Source
+  table: ORDERS_SRC1
+  type: sourceInput
+  version: 1
+type: Node
