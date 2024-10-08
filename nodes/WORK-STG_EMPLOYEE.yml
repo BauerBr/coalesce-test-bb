@@ -76,14 +76,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          EMPLOYEE: 37d22333-62c9-43c6-b41c-34736fad708f
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: SAMPLE
             nodeName: EMPLOYEE
         join:
-          joinCondition: FROM {{ ref('SAMPLE', 'EMPLOYEE') }} "EMPLOYEE"
+          joinCondition: |-
+            FROM {{ ref('SAMPLE', 'EMPLOYEE') }}
+            {{ ref_link('SAMPLE', 'EMPLOYEE') }} 
         name: STG_EMPLOYEE
         noLinkRefs: []
   name: STG_EMPLOYEE
