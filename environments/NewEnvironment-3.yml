@@ -1,5 +1,11 @@
 fileVersion: 1
 id: "3"
-mappingDefinitions: {}
+mappingDefinitions:
+  SAMPLE:
+    database: BRYAN_DEV
+    schema: ""
+  WORK:
+    database: DEV_BRYAN_BAUER_V_7_6
+    schema: ""
 name: New Environment
 type: Environment
