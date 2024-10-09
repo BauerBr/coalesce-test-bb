@@ -3,9 +3,9 @@ id: "3"
 mappingDefinitions:
   SAMPLE:
     database: BRYAN_DEV
-    schema: ""
+    schema: DEV_STAGING
   WORK:
     database: DEV_BRYAN_BAUER_V_7_6
-    schema: ""
+    schema: PROD_RAW
 name: New Environment
 type: Environment
