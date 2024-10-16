@@ -1,6 +1,6 @@
 fileVersion: 1
-id: 1b4af657-03e0-4d4f-8ec0-00df5f9030a2
-name: STG_EMPLOYEE
+id: 3f2ab16b-595b-45d9-b875-07acee198007
+name: STG_EMPLOYEE1
 operation:
   config:
     insertStrategy: INSERT
@@ -19,8 +19,8 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 1e0fc0bb-5d24-47c7-af6b-58bbe079365e
-          stepCounter: 1b4af657-03e0-4d4f-8ec0-00df5f9030a2
+          columnCounter: 136132de-322f-4948-b68e-30a5b5bc347e
+          stepCounter: 3f2ab16b-595b-45d9-b875-07acee198007
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -33,8 +33,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 131b1fda-61c2-454f-9662-21df802383c5
-          stepCounter: 1b4af657-03e0-4d4f-8ec0-00df5f9030a2
+          columnCounter: efd3c3f1-8137-4037-a70c-78303bfad492
+          stepCounter: 3f2ab16b-595b-45d9-b875-07acee198007
         config: {}
         dataType: VARCHAR(16777216)
         description: ""
@@ -47,8 +47,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 0677ba4c-e83b-4358-be3a-c3b4d9b108f2
-          stepCounter: 1b4af657-03e0-4d4f-8ec0-00df5f9030a2
+          columnCounter: 9f847bd4-3654-4b68-a0e0-89b998bcafb2
+          stepCounter: 3f2ab16b-595b-45d9-b875-07acee198007
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -61,8 +61,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 4d5122c4-df1f-4ca1-8921-ecb1fcd27830
-          stepCounter: 1b4af657-03e0-4d4f-8ec0-00df5f9030a2
+          columnCounter: 8fe31bbc-e585-4edd-9135-0cc0c9117d3a
+          stepCounter: 3f2ab16b-595b-45d9-b875-07acee198007
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -76,20 +76,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases:
-          EMPLOYEE: 37d22333-62c9-43c6-b41c-34736fad708f
+      - aliases: {}
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: SAMPLE
             nodeName: EMPLOYEE
         join:
-          joinCondition: |-
-            FROM {{ ref('SAMPLE', 'EMPLOYEE') }}
-            {{ ref_link('SAMPLE', 'EMPLOYEE') }} 
-        name: STG_EMPLOYEE
+          joinCondition: FROM {{ ref('SAMPLE', 'EMPLOYEE') }} "EMPLOYEE"
+        name: STG_EMPLOYEE1
         noLinkRefs: []
-  name: STG_EMPLOYEE
+  name: STG_EMPLOYEE1
   overrideSQL: false
   schema: ""
   sqlType: Stage
