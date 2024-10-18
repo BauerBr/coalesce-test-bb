@@ -4,6 +4,5 @@ name: New Subgraph
 steps:
   - 37d22333-62c9-43c6-b41c-34736fad708f
   - 3f2ab16b-595b-45d9-b875-07acee198007
-  - d32bf795-b334-4085-80b6-e2e6d437fe6c
+  - 5c755ca3-e4af-4d78-a9ed-5bec8e6186f8
 type: Subgraph
-version: 1
