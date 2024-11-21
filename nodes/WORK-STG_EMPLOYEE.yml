@@ -1,0 +1,96 @@
+fileVersion: 1
+id: 574f5705-5638-4866-8486-f3a37aadea80
+name: STG_EMPLOYEE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: WORK
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fdf90014-d1a3-4056-9158-1d04bc5637f7
+          stepCounter: 574f5705-5638-4866-8486-f3a37aadea80
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa5cf13a-6e1e-4f8a-a394-cd0e4208ab82
+          stepCounter: 574f5705-5638-4866-8486-f3a37aadea80
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5ad3e310-c2dd-4e36-a81c-ab105b61e661
+          stepCounter: 574f5705-5638-4866-8486-f3a37aadea80
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: SALARY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0fbf57ae-5492-477a-9123-9413d81d98d1
+          stepCounter: 574f5705-5638-4866-8486-f3a37aadea80
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: MANAGER_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('WORK', 'STG_EMPLOYEE') }}
+  name: STG_EMPLOYEE
+  schema: ""
+  sqlType: Source
+  table: STG_EMPLOYEE
+  type: sourceInput
+  version: 1
+type: Node
