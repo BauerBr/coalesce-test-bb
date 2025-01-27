@@ -4,5 +4,8 @@ mappingDefinitions:
   SAMPLE:
     database: BRYAN_DEV
     schema: DEV_STAGING
+  WORK:
+    database: BRYAN_DEV
+    schema: DEV_STAGING
 name: New Environment
 type: Environment
