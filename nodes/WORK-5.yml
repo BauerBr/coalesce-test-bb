@@ -220,7 +220,7 @@ operation:
         config: {}
         dataType: VARCHAR(16777216)
         description: ""
-        name: DIM_CUSTOMER_E_MAIL
+        name: DIM_CUSTOMER_E_MAIL7
         nullable: true
         sourceColumnReferences:
           - columnReferences:
