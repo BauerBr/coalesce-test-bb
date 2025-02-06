@@ -1,6 +1,6 @@
 fileVersion: 1
 id: e4896f7a-189e-4a08-863e-ef58b30d5ba7
-name: STG_STG_FRANCHISE_STG_FRANCHISE_TRUCK
+name: STG_STG_FRANCHISE_STG_FRANCHISE_TRUCK_1
 operation:
   config:
     insertStrategy: INSERT
@@ -411,9 +411,9 @@ operation:
             FROM {{ ref('WORK', 'STG_FRANCHISE') }} "STG_FRANCHISE"
             INNER JOIN {{ ref('WORK', 'STG_FRANCHISE_TRUCK') }} "STG_FRANCHISE_TRUCK"
             ON "STG_FRANCHISE"."FRANCHISE_ID" = "STG_FRANCHISE_TRUCK"."FRANCHISE_ID"
-        name: STG_STG_FRANCHISE_STG_FRANCHISE_TRUCK
+        name: STG_STG_FRANCHISE_STG_FRANCHISE_TRUCK_1
         noLinkRefs: []
-  name: STG_STG_FRANCHISE_STG_FRANCHISE_TRUCK
+  name: STG_STG_FRANCHISE_STG_FRANCHISE_TRUCK_1
   overrideSQL: false
   schema: ""
   sqlType: Stage
