@@ -30,6 +30,20 @@ operation:
             transform: DAY_DATE
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: c395fbec-ca4f-46e7-946a-b75f263fb83a
+          stepCounter: e698a201-2d92-4cf6-9ed2-1c351bebd9f2
+        config: {}
+        dataType: DATE
+        description: ""
+        name: DAY_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c395fbec-ca4f-46e7-946a-b75f263fb83a
+                stepCounter: e698a201-2d92-4cf6-9ed2-1c351bebd9f2
+            transform: DAY_DATE
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: 4ea425bb-a24e-4c90-bf46-d0e7f6670873
           stepCounter: e698a201-2d92-4cf6-9ed2-1c351bebd9f2
         config: {}
