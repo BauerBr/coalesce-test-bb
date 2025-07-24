@@ -1,0 +1,293 @@
+fileVersion: 1
+id: af20b40e-d863-4771-b418-439da3c01660
+name: OPPORTUNITY_SUBSET
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Current opportunity data with sales team and product information
+  isMultisource: false
+  locationName: ""
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 34fb2649-c268-4bfa-8d54-bc52b62ca5bd
+          stepCounter: af20b40e-d863-4771-b418-439da3c01660
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 34fb2649-c268-4bfa-8d54-bc52b62ca5bd
+                stepCounter: af20b40e-d863-4771-b418-439da3c01660
+            transform: O.ID
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b567e9fe-899e-43a3-8953-5111128e6213
+          stepCounter: af20b40e-d863-4771-b418-439da3c01660
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: CURR_STAGE_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b567e9fe-899e-43a3-8953-5111128e6213
+                stepCounter: af20b40e-d863-4771-b418-439da3c01660
+            transform: O.STAGE_NAME
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1e6e2e92-f217-40a0-8297-ed86f74707ac
+          stepCounter: af20b40e-d863-4771-b418-439da3c01660
+        config: {}
+        dataType: DATE
+        description: ""
+        name: CLOSE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1e6e2e92-f217-40a0-8297-ed86f74707ac
+                stepCounter: af20b40e-d863-4771-b418-439da3c01660
+            transform: O.CLOSE_DATE
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 98ceba19-81a7-45e7-bb3a-7d697d008aa2
+          stepCounter: af20b40e-d863-4771-b418-439da3c01660
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: CURR_OPPORTUNITY_SOURCE_STATIC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 98ceba19-81a7-45e7-bb3a-7d697d008aa2
+                stepCounter: af20b40e-d863-4771-b418-439da3c01660
+            transform: O.OPPORTUNITY_SOURCE_STATIC
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6f0378b6-0ceb-4089-8b71-291c086a99b3
+          stepCounter: af20b40e-d863-4771-b418-439da3c01660
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: CURR_NET_NEW_ACV
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6f0378b6-0ceb-4089-8b71-291c086a99b3
+                stepCounter: af20b40e-d863-4771-b418-439da3c01660
+            transform: O.NET_NEW_ACV
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76b7ea89-b7fb-4e6a-93cf-4ac6e0961a42
+          stepCounter: af20b40e-d863-4771-b418-439da3c01660
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: CURR_SALE_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 76b7ea89-b7fb-4e6a-93cf-4ac6e0961a42
+                stepCounter: af20b40e-d863-4771-b418-439da3c01660
+            transform: O.SALE_TYPE
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 29405b6b-62ca-42e4-ba6b-8660c14bcfc2
+          stepCounter: af20b40e-d863-4771-b418-439da3c01660
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: CURR_SALES_CHANNEL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 29405b6b-62ca-42e4-ba6b-8660c14bcfc2
+                stepCounter: af20b40e-d863-4771-b418-439da3c01660
+            transform: O.SALES_CHANNEL
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9aaa983d-17bb-44bf-a14a-d56f095afcc3
+          stepCounter: af20b40e-d863-4771-b418-439da3c01660
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: CURR_ENDPOINT_DIVERSITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9aaa983d-17bb-44bf-a14a-d56f095afcc3
+                stepCounter: af20b40e-d863-4771-b418-439da3c01660
+            transform: O.ENDPOINT_DIVERSITY__C
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b5cab440-a05c-4698-aed3-cf10c99f19fb
+          stepCounter: af20b40e-d863-4771-b418-439da3c01660
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: CURR_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b5cab440-a05c-4698-aed3-cf10c99f19fb
+                stepCounter: af20b40e-d863-4771-b418-439da3c01660
+            transform: O.TYPE
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c7faae4e-3e61-4b18-8472-aef5aaf53744
+          stepCounter: af20b40e-d863-4771-b418-439da3c01660
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: CURR_PRODUCT_EDITION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c7faae4e-3e61-4b18-8472-aef5aaf53744
+                stepCounter: af20b40e-d863-4771-b418-439da3c01660
+            transform: P.PRODUCT_EDITION
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: edca50f7-75df-4565-97c7-c5781d47c4b2
+          stepCounter: af20b40e-d863-4771-b418-439da3c01660
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: SALES_TEAM_REPORTING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: edca50f7-75df-4565-97c7-c5781d47c4b2
+                stepCounter: af20b40e-d863-4771-b418-439da3c01660
+            transform: STR.SALES_TEAM_REPORTING
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 25c2de9d-7a74-4d6d-b93b-7c7a1ce553ec
+          stepCounter: af20b40e-d863-4771-b418-439da3c01660
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: CURR_SUB_TEAM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 25c2de9d-7a74-4d6d-b93b-7c7a1ce553ec
+                stepCounter: af20b40e-d863-4771-b418-439da3c01660
+            transform: U.SUB_TEAM
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8cca5d33-1ee1-48f8-aa37-d40fb564fa8b
+          stepCounter: af20b40e-d863-4771-b418-439da3c01660
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: CURR_ICP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8cca5d33-1ee1-48f8-aa37-d40fb564fa8b
+                stepCounter: af20b40e-d863-4771-b418-439da3c01660
+            transform: CASE WHEN O.ICP THEN 'ICP' END
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d784081-39ed-4e73-b1f8-a772218d2d1e
+          stepCounter: af20b40e-d863-4771-b418-439da3c01660
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: CURR_PARTNER_CATEGORY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9d784081-39ed-4e73-b1f8-a772218d2d1e
+                stepCounter: af20b40e-d863-4771-b418-439da3c01660
+            transform: O.PARTNER_CATEGORY
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5c97190b-5d42-4d12-8259-f05b46f43bc8
+          stepCounter: af20b40e-d863-4771-b418-439da3c01660
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: CURR_OPPORTUNITY_PARTNER_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5c97190b-5d42-4d12-8259-f05b46f43bc8
+                stepCounter: af20b40e-d863-4771-b418-439da3c01660
+            transform: O.OPPORTUNITY_PARTNER_NAME
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e8a81bc9-a87e-48ac-b800-4914280a2c61
+          stepCounter: af20b40e-d863-4771-b418-439da3c01660
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: CURR_OPPORTUNITY_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e8a81bc9-a87e-48ac-b800-4914280a2c61
+                stepCounter: af20b40e-d863-4771-b418-439da3c01660
+            transform: O.OPPORTUNITY_SOURCE
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48b324a4-0c55-4bce-8ce4-3614906555ef
+          stepCounter: af20b40e-d863-4771-b418-439da3c01660
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: CURR_DEAL_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 48b324a4-0c55-4bce-8ce4-3614906555ef
+                stepCounter: af20b40e-d863-4771-b418-439da3c01660
+            transform: O.DEAL_TYPE__C
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAMPLE
+            nodeName: D_OPPORTUNITY
+          - locationName: SAMPLE
+            nodeName: LKP_SALES_TEAM_MAPPING
+          - locationName: SAMPLE
+            nodeName: USER
+          - locationName: SAMPLE
+            nodeName: VW_TS_PIPELINE_MASTER
+        join:
+          joinCondition: |-
+            FROM {{ ref('SAMPLE', 'D_OPPORTUNITY') }} O
+            LEFT JOIN {{ ref('SAMPLE', 'LKP_SALES_TEAM_MAPPING') }} STR
+                ON O.SALES_TEAM = STR.SALES_TEAM
+            LEFT JOIN {{ ref('SAMPLE', 'USER') }} U 
+                ON O.OWNER_ID = U.ID
+            LEFT JOIN {{ ref('SAMPLE', 'VW_TS_PIPELINE_MASTER') }} P 
+                ON O.ID = P.OPPORTUNITY_ID
+        name: OPPORTUNITY_SUBSET
+        noLinkRefs: []
+  name: OPPORTUNITY_SUBSET
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

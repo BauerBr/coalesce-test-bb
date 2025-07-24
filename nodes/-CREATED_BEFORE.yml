@@ -1,0 +1,117 @@
+fileVersion: 1
+id: d50f2e63-42e6-4d6a-8616-2cb7c59a735c
+name: CREATED_BEFORE
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Identifies opportunities created before their minimum valid date
+  isMultisource: false
+  locationName: ""
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 08aab3f2-695a-488a-9965-f463af5a5971
+          stepCounter: d50f2e63-42e6-4d6a-8616-2cb7c59a735c
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 08aab3f2-695a-488a-9965-f463af5a5971
+                stepCounter: d50f2e63-42e6-4d6a-8616-2cb7c59a735c
+            transform: ID
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7dda8d55-1699-4fa8-84ab-e9e8ed388420
+          stepCounter: d50f2e63-42e6-4d6a-8616-2cb7c59a735c
+        config: {}
+        dataType: DATE
+        description: ""
+        name: CREATED_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7dda8d55-1699-4fa8-84ab-e9e8ed388420
+                stepCounter: d50f2e63-42e6-4d6a-8616-2cb7c59a735c
+            transform: DATE_TRUNC(DAY,CREATED_DATE)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf2d95b6-7571-41c0-a823-d4af0babdb0e
+          stepCounter: d50f2e63-42e6-4d6a-8616-2cb7c59a735c
+        config: {}
+        dataType: DATE
+        description: ""
+        name: DAY_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cf2d95b6-7571-41c0-a823-d4af0babdb0e
+                stepCounter: d50f2e63-42e6-4d6a-8616-2cb7c59a735c
+            transform: DAY_DATE
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4eb04c15-d136-4eb3-bb36-380a9fd1df42
+          stepCounter: d50f2e63-42e6-4d6a-8616-2cb7c59a735c
+        config: {}
+        dataType: DATE
+        description: ""
+        name: MIN_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4eb04c15-d136-4eb3-bb36-380a9fd1df42
+                stepCounter: d50f2e63-42e6-4d6a-8616-2cb7c59a735c
+            transform: DATE_TRUNC(DAY,MIN(DBT_VALID_FROM))
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 135adb5e-0953-42a8-a7a9-5d5f2fd8936b
+          stepCounter: d50f2e63-42e6-4d6a-8616-2cb7c59a735c
+        config: {}
+        dataType: DATE
+        description: ""
+        name: MAX_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 135adb5e-0953-42a8-a7a9-5d5f2fd8936b
+                stepCounter: d50f2e63-42e6-4d6a-8616-2cb7c59a735c
+            transform: DATE_TRUNC(DAY,MAX(DBT_VALID_FROM))
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: CELIGO_TGT
+            nodeName: EXPANDED_DAYS
+        join:
+          joinCondition: |-
+            FROM {{ ref('CELIGO_TGT', 'EXPANDED_DAYS') }}
+            GROUP BY ID, CREATED_DATE, DAY_DATE
+            HAVING CREATED_DATE < MIN_DATE
+                AND (DAY_DATE NOT BETWEEN MIN_DATE AND MAX_DATE)
+                AND DAY_DATE < MAX_DATE
+        name: STG_EXPANDED_DAYS
+        noLinkRefs: []
+  name: CREATED_BEFORE
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

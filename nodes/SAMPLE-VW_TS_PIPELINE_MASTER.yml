@@ -1,0 +1,54 @@
+fileVersion: 1
+id: 25373bff-4541-4c5e-9857-ed879364908b
+name: VW_TS_PIPELINE_MASTER
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SAMPLE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6e3ab3fd-91cf-4dcc-918a-7f514f98a8bd
+          stepCounter: 25373bff-4541-4c5e-9857-ed879364908b
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: SALES_TEAM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 91405871-3999-4e77-af5a-1c5b22965f97
+          stepCounter: 25373bff-4541-4c5e-9857-ed879364908b
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: SALES_TEAM_REPORTING
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: VW_TS_PIPELINE_MASTER
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

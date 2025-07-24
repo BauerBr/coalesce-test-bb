@@ -1,0 +1,92 @@
+fileVersion: 1
+id: a3bbc835-1fe8-489e-b654-83b803ed2f63
+name: LKP_SALES_TEAM_MAPPING
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SAMPLE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1de6b39-17d8-4477-ad4f-ad1047a839ab
+          stepCounter: a3bbc835-1fe8-489e-b654-83b803ed2f63
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: SALES_TEAM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bcf73d3e-73d7-47e0-b3ad-0a2459633a05
+          stepCounter: a3bbc835-1fe8-489e-b654-83b803ed2f63
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: SALES_TEAM_REPORTING
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: af3d23a7-09db-486d-b7f1-3805071f0e26
+          stepCounter: a3bbc835-1fe8-489e-b654-83b803ed2f63
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: REGION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 16c174b3-2a31-4f38-b1fa-da2ec02483d5
+          stepCounter: a3bbc835-1fe8-489e-b654-83b803ed2f63
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: SEGMENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: LKP_SALES_TEAM_MAPPING
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

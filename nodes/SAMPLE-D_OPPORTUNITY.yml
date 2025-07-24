@@ -1,9 +1,8 @@
 fileVersion: 1
-id: f91424c6-cbda-49a7-a926-6f96f08611c7
-name: CUSTOMERS_SRC1
+id: 0bb2a46d-9350-4748-a45c-03be16b97134
+name: D_OPPORTUNITY
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: ""
   locationName: SAMPLE
@@ -14,32 +13,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 938d6a6c-0496-478d-bcfe-908ef1987036
-          stepCounter: f91424c6-cbda-49a7-a926-6f96f08611c7
-        config: {}
-        dataType: NUMBER(38,0)
-        defaultValue: ""
-        description: ""
-        name: C_CUSTKEY
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 8c5157e4-21c5-4816-9030-dd51baf5c65e
-          stepCounter: f91424c6-cbda-49a7-a926-6f96f08611c7
+          columnCounter: 67b45644-e199-4801-a479-4d6a338c0c22
+          stepCounter: 0bb2a46d-9350-4748-a45c-03be16b97134
         config: {}
         dataType: VARCHAR(16777216)
         defaultValue: ""
         description: ""
-        name: C_FIRSTNAME
+        name: ACCOUNT_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -52,13 +32,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 827e044e-fa6c-47f4-8bdd-35af0e48a70c
-          stepCounter: f91424c6-cbda-49a7-a926-6f96f08611c7
+          columnCounter: f5fbb7a0-677f-4064-becb-9575d28f1243
+          stepCounter: 0bb2a46d-9350-4748-a45c-03be16b97134
         config: {}
         dataType: VARCHAR(16777216)
         defaultValue: ""
         description: ""
-        name: C_LASTNAME
+        name: CLOSE_DATE
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -71,13 +51,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: deb3b65b-bfb8-4b2c-a2e3-edec8ab4476b
-          stepCounter: f91424c6-cbda-49a7-a926-6f96f08611c7
+          columnCounter: ecf5cc3b-de97-4046-8fe3-ec80c36d77ed
+          stepCounter: 0bb2a46d-9350-4748-a45c-03be16b97134
         config: {}
         dataType: VARCHAR(16777216)
         defaultValue: ""
         description: ""
-        name: C_ADDRESS
+        name: CREATED_DATE
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -90,32 +70,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 5f2ffa13-fb2e-4a62-9c51-2ae46f2fd1fa
-          stepCounter: f91424c6-cbda-49a7-a926-6f96f08611c7
-        config: {}
-        dataType: NUMBER(38,0)
-        defaultValue: ""
-        description: ""
-        name: C_NATIONKEY
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 1100de5c-c9fc-4526-bd3f-b06d88a7878a
-          stepCounter: f91424c6-cbda-49a7-a926-6f96f08611c7
+          columnCounter: 6ecf5dc3-ba7d-482e-af14-63bac4cfd1f3
+          stepCounter: 0bb2a46d-9350-4748-a45c-03be16b97134
         config: {}
         dataType: VARCHAR(16777216)
         defaultValue: ""
         description: ""
-        name: C_PHONE
+        name: CUSTOMER_NAME
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -128,32 +89,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: d4a9a619-f84a-4949-b440-008f3b43c9d8
-          stepCounter: f91424c6-cbda-49a7-a926-6f96f08611c7
-        config: {}
-        dataType: FLOAT
-        defaultValue: ""
-        description: ""
-        name: C_ACCTBAL
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 01e4ce55-4b48-4dcb-b49b-aa62dacd6f77
-          stepCounter: f91424c6-cbda-49a7-a926-6f96f08611c7
+          columnCounter: cef38102-9571-4bab-868d-b4ca869eff7e
+          stepCounter: 0bb2a46d-9350-4748-a45c-03be16b97134
         config: {}
         dataType: VARCHAR(16777216)
         defaultValue: ""
         description: ""
-        name: C_MKTSEGMENT
+        name: ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -166,13 +108,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: d7c12fd1-c4fd-4f04-b7e8-b67a9b2436d8
-          stepCounter: f91424c6-cbda-49a7-a926-6f96f08611c7
+          columnCounter: c82f109f-dd01-4115-bbfe-3babb45b50cb
+          stepCounter: 0bb2a46d-9350-4748-a45c-03be16b97134
         config: {}
         dataType: VARCHAR(16777216)
         defaultValue: ""
         description: ""
-        name: C_COMMENT
+        name: ISCLOSED
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -180,12 +122,142 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('SAMPLE', 'CUSTOMERS_SRC1') }}
-  name: CUSTOMERS_SRC1
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d4f200d-9d50-4ff5-bf75-9fbd26c01377
+          stepCounter: 0bb2a46d-9350-4748-a45c-03be16b97134
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LEAD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 68d075ee-564e-41e6-a9d9-b1886209b57f
+          stepCounter: 0bb2a46d-9350-4748-a45c-03be16b97134
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff1139ab-200a-4e22-82bd-94109ae8aeaf
+          stepCounter: 0bb2a46d-9350-4748-a45c-03be16b97134
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: OPPORTUNITY_OWNER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3f40592b-b494-4537-b101-4cba6ee533da
+          stepCounter: 0bb2a46d-9350-4748-a45c-03be16b97134
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: OWNER_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6e874b77-f33b-4fc6-9e6a-a42027fe73c1
+          stepCounter: 0bb2a46d-9350-4748-a45c-03be16b97134
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PARTNER_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d0cc2c84-d56b-4aa5-b29a-ec32b61bbdc6
+          stepCounter: 0bb2a46d-9350-4748-a45c-03be16b97134
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: STAGE_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 96360dc7-e59f-4bf2-9daa-9d63637095d8
+          stepCounter: 0bb2a46d-9350-4748-a45c-03be16b97134
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: TERRITORY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: D_OPPORTUNITY
   schema: ""
   sqlType: Source
-  table: CUSTOMERS_SRC1
   type: sourceInput
   version: 1
 type: Node

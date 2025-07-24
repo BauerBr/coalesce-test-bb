@@ -1,0 +1,35 @@
+fileVersion: 1
+id: 7efce02f-b3f4-4170-bdce-3fa51c0adb8d
+name: DIM_DATE
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SAMPLE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 523706df-a30a-401b-9e93-0a9467a4d048
+          stepCounter: 7efce02f-b3f4-4170-bdce-3fa51c0adb8d
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: DIM_DATE
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

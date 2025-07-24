@@ -1,0 +1,54 @@
+fileVersion: 1
+id: 997a3efa-0fec-4757-96a0-4e559efaaeaf
+name: SALES_ORDER_HEADER
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SAMPLE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 089bbc87-7213-4437-8a6b-4b987b24e883
+          stepCounter: 997a3efa-0fec-4757-96a0-4e559efaaeaf
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d608848d-ef0e-47e4-83c4-caf1e87c471f
+          stepCounter: 997a3efa-0fec-4757-96a0-4e559efaaeaf
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: MULTI_YEAR_SUBSCRIPTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: SALES_ORDER_HEADER
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

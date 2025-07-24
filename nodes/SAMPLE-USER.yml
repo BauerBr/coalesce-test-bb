@@ -1,0 +1,111 @@
+fileVersion: 1
+id: 0eb803bc-e63a-474a-9a79-9c0601a21c2a
+name: USER
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SAMPLE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8b8086a8-45c6-471f-b8c9-016d00d2749b
+          stepCounter: 0eb803bc-e63a-474a-9a79-9c0601a21c2a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: USER_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cc4071a6-05ba-4774-98a1-ccfbae2716ea
+          stepCounter: 0eb803bc-e63a-474a-9a79-9c0601a21c2a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: USER_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 75eb63a0-cb19-4fc4-8920-a7b26b6faf5e
+          stepCounter: 0eb803bc-e63a-474a-9a79-9c0601a21c2a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: USER_ROLE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f985510d-b650-460d-b84b-e4078ba06f74
+          stepCounter: 0eb803bc-e63a-474a-9a79-9c0601a21c2a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: USER_ROLE_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a77ea2ed-b0d9-4b70-a2d2-5c59a3b54cfc
+          stepCounter: 0eb803bc-e63a-474a-9a79-9c0601a21c2a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: USER_SUBTEAM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: USER
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

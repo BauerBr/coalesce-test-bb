@@ -1,0 +1,130 @@
+fileVersion: 1
+id: 2c9a893a-6ca7-4258-9609-f7ee47131c19
+name: OPPORTUNITY_TIMESERIES
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SAMPLE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 80ba3170-dfd5-48ca-bfa4-c64f280d572c
+          stepCounter: 2c9a893a-6ca7-4258-9609-f7ee47131c19
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: DBT_VALID_FROM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: db5fea3a-b8f2-4cc1-a955-cf1cdb452edd
+          stepCounter: 2c9a893a-6ca7-4258-9609-f7ee47131c19
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: DBT_VALID_TO
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f69fc721-4f51-427b-865e-716961cf09ca
+          stepCounter: 2c9a893a-6ca7-4258-9609-f7ee47131c19
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 83db0efa-2f36-40a0-b0ff-91f4ff40fb60
+          stepCounter: 2c9a893a-6ca7-4258-9609-f7ee47131c19
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NETSUITE_SALES_ORDER_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1d5dc068-cea4-4619-85bf-6bfe3b7c403d
+          stepCounter: 2c9a893a-6ca7-4258-9609-f7ee47131c19
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: OWNER_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cb4d7578-fcb2-4106-9ddf-06cd1df6b8a1
+          stepCounter: 2c9a893a-6ca7-4258-9609-f7ee47131c19
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: SALES_TEAM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: OPPORTUNITY_TIMESERIES
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

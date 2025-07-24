@@ -1,0 +1,80 @@
+fileVersion: 1
+id: 1c6cf0a7-5736-41e9-8f05-57777325d666
+name: SFS_RANK
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Sales funnel stage ranking lookup table
+  isMultisource: false
+  locationName: ""
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e35190c6-666e-439d-bc84-426a19a5c3dd
+          stepCounter: 1c6cf0a7-5736-41e9-8f05-57777325d666
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: STAGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e35190c6-666e-439d-bc84-426a19a5c3dd
+                stepCounter: 1c6cf0a7-5736-41e9-8f05-57777325d666
+            transform: STAGE
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e008c473-daee-4c01-8fc6-8fc60ff72e0f
+          stepCounter: 1c6cf0a7-5736-41e9-8f05-57777325d666
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: SFS_RANK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e008c473-daee-4c01-8fc6-8fc60ff72e0f
+                stepCounter: 1c6cf0a7-5736-41e9-8f05-57777325d666
+            transform: SFS_RANK
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: |-
+            FROM (
+                SELECT 'Prospect' AS STAGE, 1 AS SFS_RANK UNION ALL
+                SELECT 'Needs Established', 2 UNION ALL
+                SELECT 'Proposal', 3 UNION ALL
+                SELECT 'Negotiation', 4 UNION ALL
+                SELECT 'Purchasing', 5 UNION ALL
+                SELECT 'Signed - Pending Processing', 6 UNION ALL
+                SELECT 'Ready to Sync', 7 UNION ALL
+                SELECT 'Closed Won', 8 UNION ALL
+                SELECT 'Closed Lost', 9 UNION ALL
+                SELECT 'Withdrawn', 10
+            )
+        name: STG_NODE
+        noLinkRefs: []
+  name: SFS_RANK
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
