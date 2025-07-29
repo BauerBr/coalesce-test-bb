@@ -1,0 +1,232 @@
+fileVersion: 1
+id: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+name: ranked_opptys
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Combines ranked opportunities from both created_before and normal date ranges
+  isMultisource: false
+  locationName: SAMPLE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0ed5ee50-eb89-4ff1-a330-8125bb8b25b5
+          stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+        config: {}
+        dataType: DATE
+        description: ""
+        name: day_date
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0ed5ee50-eb89-4ff1-a330-8125bb8b25b5
+                stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+            transform: "\"day_date\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a255f979-00af-4ed5-bfe7-5228fed2408c
+          stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a255f979-00af-4ed5-bfe7-5228fed2408c
+                stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+            transform: "\"id\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5f4942a3-2c35-40a9-981c-d6063cc13cc9
+          stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: stage_name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5f4942a3-2c35-40a9-981c-d6063cc13cc9
+                stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+            transform: "\"stage_name\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6260cd92-2588-4120-9f57-b0060ceddde7
+          stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: dbt_valid_from
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6260cd92-2588-4120-9f57-b0060ceddde7
+                stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+            transform: "\"dbt_valid_from\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0abbb035-8336-401c-ac6d-325b4448ba58
+          stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: net_new_acv
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0abbb035-8336-401c-ac6d-325b4448ba58
+                stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+            transform: "\"net_new_acv\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76bba007-8978-49e2-bf1a-7b1e946b981e
+          stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: created_date
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 76bba007-8978-49e2-bf1a-7b1e946b981e
+                stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+            transform: "\"created_date\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8a53ab45-b65c-4a6e-8e8d-3895a315dade
+          stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+        config: {}
+        dataType: DATE
+        description: ""
+        name: close_date
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8a53ab45-b65c-4a6e-8e8d-3895a315dade
+                stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+            transform: "\"close_date\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ce934866-810c-4a0e-8de4-90a5a9a675ef
+          stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: sales_team_reporting
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ce934866-810c-4a0e-8de4-90a5a9a675ef
+                stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+            transform: "\"sales_team_reporting\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 98cc354b-7be4-4e8f-ac65-43615d7223f6
+          stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: territory
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 98cc354b-7be4-4e8f-ac65-43615d7223f6
+                stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+            transform: "\"territory\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: de58f545-8490-46db-b311-5bff39f294f1
+          stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: partner_type
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: de58f545-8490-46db-b311-5bff39f294f1
+                stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+            transform: "\"partner_type\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ae90c53d-d351-44a5-956b-e8bf9653de89
+          stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: opportunity_owner
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ae90c53d-d351-44a5-956b-e8bf9653de89
+                stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+            transform: "\"opportunity_owner\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bbeae2cb-a9f3-41da-bdf1-99af859e5d3e
+          stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: sub_team
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bbeae2cb-a9f3-41da-bdf1-99af859e5d3e
+                stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+            transform: "\"sub_team\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9f571969-64e7-4b14-938e-1fd917395cad
+          stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: valid_date
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9f571969-64e7-4b14-938e-1fd917395cad
+                stepCounter: 05a668a1-17d2-499c-964b-c2482e8d6ce4
+            transform: "\"valid_date\""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          cbr: 95785308-ab21-4989-b047-1369a276433b
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAMPLE
+            nodeName: cbr
+          - locationName: SAMPLE
+            nodeName: nr
+        join:
+          joinCondition: |-
+            FROM {{ ref('SAMPLE', 'cbr') }} "cbr"
+            WHERE "row_num" = 1
+            UNION ALL
+            SELECT * FROM {{ ref('SAMPLE', 'nr') }} "nr"
+            WHERE "row_num" = 1
+        name: STG_cbr_nr
+        noLinkRefs: []
+  name: ranked_opptys
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

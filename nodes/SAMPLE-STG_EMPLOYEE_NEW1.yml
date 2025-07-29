@@ -1,6 +1,6 @@
 fileVersion: 1
-id: d32bf795-b334-4085-80b6-e2e6d437fe6c
-name: STG_EMPLOYEE3
+id: ec04d083-90b3-4988-9195-3caf590aee3c
+name: STG_EMPLOYEE_NEW1
 operation:
   config:
     insertStrategy: INSERT
@@ -10,68 +10,68 @@ operation:
     truncateBefore: true
   database: ""
   deployEnabled: true
-  description: ""
+  description: A staging node off of EMPLOYEE
   isMultisource: false
-  locationName: WORK
+  locationName: SAMPLE
   materializationType: table
   metadata:
     appliedNodeTests: []
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: eae16355-d12c-4d39-a877-09a4d6a54f10
-          stepCounter: d32bf795-b334-4085-80b6-e2e6d437fe6c
+          columnCounter: 9eec87f8-0606-44f4-8c0a-822870ff1ab9
+          stepCounter: ec04d083-90b3-4988-9195-3caf590aee3c
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: NUMBER
         description: ""
         name: ID
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 7504b7ef-466f-4959-b96d-5f8b7aa55990
-                stepCounter: 37d22333-62c9-43c6-b41c-34736fad708f
+              - columnCounter: f926013d-f52e-49e2-b195-7ed8b4a286fa
+                stepCounter: 8a8ad0b6-db4d-4c83-b1a7-d4d0ba23f220
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 942ba8b4-68e1-4c36-bf42-a84c4ce1924d
-          stepCounter: d32bf795-b334-4085-80b6-e2e6d437fe6c
+          columnCounter: c8b67188-d65f-47f0-97c1-0d2f1f6a1a07
+          stepCounter: ec04d083-90b3-4988-9195-3caf590aee3c
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: VARCHAR
         description: ""
         name: NAME
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: b13f8aff-3ea1-4880-b92d-b8d8e77ae925
-                stepCounter: 37d22333-62c9-43c6-b41c-34736fad708f
+              - columnCounter: f32fc7b7-442f-4e5c-bcc3-e890b61fa597
+                stepCounter: 8a8ad0b6-db4d-4c83-b1a7-d4d0ba23f220
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 88d568e1-13c7-467c-a265-7482ab77e49e
-          stepCounter: d32bf795-b334-4085-80b6-e2e6d437fe6c
+          columnCounter: 37cde40b-4dff-44ec-a1a3-5ba3a557789d
+          stepCounter: ec04d083-90b3-4988-9195-3caf590aee3c
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: NUMBER
         description: ""
         name: SALARY
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: daf3710d-8e29-4c3c-a0dc-66b338ce1bd4
-                stepCounter: 37d22333-62c9-43c6-b41c-34736fad708f
+              - columnCounter: e5c0d329-66a1-4d48-8aed-15284d3069df
+                stepCounter: 8a8ad0b6-db4d-4c83-b1a7-d4d0ba23f220
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 1db456c7-218f-4510-b2c9-9face0482b0a
-          stepCounter: d32bf795-b334-4085-80b6-e2e6d437fe6c
+          columnCounter: 536eaaff-52c9-4231-a77e-3369703130c2
+          stepCounter: ec04d083-90b3-4988-9195-3caf590aee3c
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: NUMBER
         description: ""
         name: MANAGER_ID
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 0f82b5f5-db7c-4432-9e56-2a04a4efc0a6
-                stepCounter: 37d22333-62c9-43c6-b41c-34736fad708f
+              - columnCounter: 61786bee-f547-49c2-8223-f220ddb9b7bc
+                stepCounter: 8a8ad0b6-db4d-4c83-b1a7-d4d0ba23f220
             transform: ""
     cteString: ""
     enabledColumnTestIDs: []
@@ -81,12 +81,12 @@ operation:
           customSQL: ""
         dependencies:
           - locationName: SAMPLE
-            nodeName: EMPLOYEE
+            nodeName: STG_EMPLOYEE_NEW
         join:
-          joinCondition: FROM {{ ref('SAMPLE', 'EMPLOYEE') }} "EMPLOYEE"
-        name: STG_EMPLOYEE3
+          joinCondition: FROM {{ ref('SAMPLE', 'STG_EMPLOYEE_NEW') }} "STG_EMPLOYEE_NEW"
+        name: STG_EMPLOYEE_NEW1
         noLinkRefs: []
-  name: STG_EMPLOYEE3
+  name: STG_EMPLOYEE_NEW1
   overrideSQL: false
   schema: ""
   sqlType: Stage

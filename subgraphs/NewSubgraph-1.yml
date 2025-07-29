@@ -1,8 +1,17 @@
 fileVersion: 1
+folderCounter: "1"
 id: "1"
 name: New Subgraph
 steps:
   - 37d22333-62c9-43c6-b41c-34736fad708f
-  - 3a52406f-5862-4e04-9d6a-b04fb9779eb6
+  - 52c69b56-faba-4dde-ab1c-ccbcb3ae613e
+  - 617e43c7-6824-4465-a037-2c86fd19c718
+  - 76d2a4cd-e84c-421d-b7a0-f3491ba615c3
+  - 8069196e-365f-42f5-8f5f-572d628c492d
+  - 87216d86-30e6-4aa6-b406-113e3106f8a9
+  - 892efbf2-aac7-49b1-94c3-e894b6ed84f7
+  - 8a8ad0b6-db4d-4c83-b1a7-d4d0ba23f220
+  - 98847af2-12b6-49ad-be86-19411ba2540d
+  - ec04d083-90b3-4988-9195-3caf590aee3c
+  - f6139ee1-817e-4d4a-a02d-3758b4b0e3be
 type: Subgraph
-version: 1

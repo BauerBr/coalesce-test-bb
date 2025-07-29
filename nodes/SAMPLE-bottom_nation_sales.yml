@@ -1,0 +1,115 @@
+fileVersion: 1
+id: 68b77b43-7401-4836-bf2a-cbf44df85812
+name: bottom_nation_sales
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Aggregates sales amounts for the bottom-ranked nations by supplier.
+  isMultisource: true
+  locationName: SAMPLE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c2292be3-6969-4f2e-a7de-536818a6d691
+          stepCounter: 68b77b43-7401-4836-bf2a-cbf44df85812
+        config: {}
+        dataType: NUMBER
+        description: ""
+        isBusinessKey: false
+        name: suppkey
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c2292be3-6969-4f2e-a7de-536818a6d691
+                stepCounter: 68b77b43-7401-4836-bf2a-cbf44df85812
+            transform: SUPPKEY
+          - columnReferences: []
+            transform: ""
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a084ea85-8f9c-45ba-a491-50f01dae224e
+          stepCounter: 68b77b43-7401-4836-bf2a-cbf44df85812
+        config: {}
+        dataType: NUMBER
+        description: ""
+        isBusinessKey: false
+        name: sales_amt
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a084ea85-8f9c-45ba-a491-50f01dae224e
+                stepCounter: 68b77b43-7401-4836-bf2a-cbf44df85812
+            transform: SUM(SALES_AMT)
+          - columnReferences: []
+            transform: ""
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8feadab2-006e-4f8b-8e16-6e3d7aa80e32
+          stepCounter: 68b77b43-7401-4836-bf2a-cbf44df85812
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        isBusinessKey: false
+        name: bottom_nations
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8feadab2-006e-4f8b-8e16-6e3d7aa80e32
+                stepCounter: 68b77b43-7401-4836-bf2a-cbf44df85812
+            transform: LISTAGG(NATION, ',') WITHIN GROUP (ORDER BY NATION_RANK)
+          - columnReferences: []
+            transform: ""
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAMPLE
+            nodeName: nation_rank
+        join:
+          joinCondition: FROM {{ ref('SAMPLE', 'nation_rank') }} WHERE NATION_RANK_REV <= 10 GROUP BY SUPPKEY
+        name: bottom_nation_sales
+        noLinkRefs: []
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: ""
+        name: NEW_SOURCE
+        noLinkRefs: []
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: ""
+        name: NEW_SOURCE
+        noLinkRefs: []
+  name: bottom_nation_sales
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

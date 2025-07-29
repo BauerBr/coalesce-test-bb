@@ -1,0 +1,126 @@
+fileVersion: 1
+id: b9771bd7-f499-4179-a582-7a3ce68a1d0d
+name: mid_nation_sales
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Aggregates sales amounts for mid-ranked nations by supplier.
+  isMultisource: true
+  locationName: SAMPLE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2681cec7-e78e-40e4-8f07-3017ffe3d693
+          stepCounter: b9771bd7-f499-4179-a582-7a3ce68a1d0d
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: SUPPKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2681cec7-e78e-40e4-8f07-3017ffe3d693
+                stepCounter: b9771bd7-f499-4179-a582-7a3ce68a1d0d
+            transform: SUPPKEY
+          - columnReferences: []
+            transform: ""
+          - columnReferences: []
+            transform: ""
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f9225fd0-a8a3-4f15-990b-8360206f7fb7
+          stepCounter: b9771bd7-f499-4179-a582-7a3ce68a1d0d
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: SALES_AMT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f9225fd0-a8a3-4f15-990b-8360206f7fb7
+                stepCounter: b9771bd7-f499-4179-a582-7a3ce68a1d0d
+            transform: SUM(SALES_AMT)
+          - columnReferences: []
+            transform: ""
+          - columnReferences: []
+            transform: ""
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 31ce65ca-b82c-4959-9d24-8d7deecda736
+          stepCounter: b9771bd7-f499-4179-a582-7a3ce68a1d0d
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: MID_NATIONS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 31ce65ca-b82c-4959-9d24-8d7deecda736
+                stepCounter: b9771bd7-f499-4179-a582-7a3ce68a1d0d
+            transform: LISTAGG(NATION, ',') WITHIN GROUP (ORDER BY NATION_RANK)
+          - columnReferences: []
+            transform: ""
+          - columnReferences: []
+            transform: ""
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAMPLE
+            nodeName: nation_rank
+        join:
+          joinCondition: FROM {{ ref('SAMPLE', 'nation_rank') }} WHERE NATION_RANK > 10 AND NATION_RANK_REV > 10 GROUP BY SUPPKEY
+        name: mid_nation_sales
+        noLinkRefs: []
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: ""
+        name: NEW_SOURCE
+        noLinkRefs: []
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: ""
+        name: NEW_SOURCE
+        noLinkRefs: []
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: ""
+        name: NEW_SOURCE
+        noLinkRefs: []
+  name: mid_nation_sales
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

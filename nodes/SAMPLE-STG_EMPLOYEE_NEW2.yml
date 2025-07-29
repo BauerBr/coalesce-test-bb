@@ -1,0 +1,98 @@
+fileVersion: 1
+id: 98847af2-12b6-49ad-be86-19411ba2540d
+name: STG_EMPLOYEE_NEW2
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: A staging node off of STG_EMPLOYEE_NEW
+  isMultisource: false
+  locationName: SAMPLE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5afa7b61-9a4a-4e76-aca7-bd43bda10c15
+          stepCounter: 98847af2-12b6-49ad-be86-19411ba2540d
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 902cb569-7700-4264-ac4e-d8ea07519178
+                stepCounter: 617e43c7-6824-4465-a037-2c86fd19c718
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef1e15bf-0e4a-4e23-825f-a35b1d5fd617
+          stepCounter: 98847af2-12b6-49ad-be86-19411ba2540d
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9fd34f19-fb66-4c80-885c-90cc51624887
+                stepCounter: 617e43c7-6824-4465-a037-2c86fd19c718
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cec3dcdb-31b3-4e93-b581-35bf2907fe2b
+          stepCounter: 98847af2-12b6-49ad-be86-19411ba2540d
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: SALARY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5d4e7fae-2ff0-44ef-a81a-94846ff8175d
+                stepCounter: 617e43c7-6824-4465-a037-2c86fd19c718
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b4e2ae5-e92c-4d31-b75b-d7fc5c7a9134
+          stepCounter: 98847af2-12b6-49ad-be86-19411ba2540d
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: MANAGER_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4671ac50-344b-43b5-94ab-6f3ed1d1c846
+                stepCounter: 617e43c7-6824-4465-a037-2c86fd19c718
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAMPLE
+            nodeName: STG_EMPLOYEE_NEW
+        join:
+          joinCondition: FROM {{ ref('SAMPLE', 'STG_EMPLOYEE_NEW') }} "STG_EMPLOYEE_NEW"
+        name: STG_EMPLOYEE_NEW2
+        noLinkRefs: []
+  name: STG_EMPLOYEE_NEW2
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,72 @@
+fileVersion: 1
+id: c0fae3f7-edca-4097-bb65-fe8fc9902b3a
+name: supplier_sales
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Aggregated sales amounts by supplier.
+  isMultisource: false
+  locationName: SAMPLE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5df2c0cd-935f-4340-a449-e8101000a216
+          stepCounter: c0fae3f7-edca-4097-bb65-fe8fc9902b3a
+        config: {}
+        dataType: NUMBER
+        description: ""
+        isBusinessKey: true
+        name: suppkey
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5df2c0cd-935f-4340-a449-e8101000a216
+                stepCounter: c0fae3f7-edca-4097-bb65-fe8fc9902b3a
+            transform: SUPPKEY
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b92aeabb-8cb8-4f80-8ac2-450c83ff0b0d
+          stepCounter: c0fae3f7-edca-4097-bb65-fe8fc9902b3a
+        config: {}
+        dataType: NUMBER
+        description: ""
+        isBusinessKey: false
+        name: sales_amt
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b92aeabb-8cb8-4f80-8ac2-450c83ff0b0d
+                stepCounter: c0fae3f7-edca-4097-bb65-fe8fc9902b3a
+            transform: SUM(SALES_AMT)
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAMPLE
+            nodeName: sales_base
+        join:
+          joinCondition: FROM {{ ref('SAMPLE', 'sales_base') }} GROUP BY SUPPKEY
+        name: STG_NODE
+        noLinkRefs: []
+  name: supplier_sales
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

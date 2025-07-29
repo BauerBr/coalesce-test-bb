@@ -1,0 +1,155 @@
+fileVersion: 1
+id: 52c69b56-faba-4dde-ab1c-ccbcb3ae613e
+name: VW_EMPLOYEE_COMBINED
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: View combining STG_EMPLOYEE and STG_EMPLOYEE_NEW
+  isMultisource: false
+  locationName: SAMPLE
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 14c97e20-b5e1-488d-bff7-52da54ec7ed1
+          stepCounter: 52c69b56-faba-4dde-ab1c-ccbcb3ae613e
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: EMPLOYEE_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2d054467-357a-4fe7-bc07-d1cd2a345d8b
+                stepCounter: 892efbf2-aac7-49b1-94c3-e894b6ed84f7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 80d01d55-36bf-4a4b-b0af-65200b898b07
+          stepCounter: 52c69b56-faba-4dde-ab1c-ccbcb3ae613e
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: EMPLOYEE_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 21235652-8c12-4338-805e-f4c21be5fbf9
+                stepCounter: 892efbf2-aac7-49b1-94c3-e894b6ed84f7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3406057e-26d3-437b-b952-7078a7ab09a3
+          stepCounter: 52c69b56-faba-4dde-ab1c-ccbcb3ae613e
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: EMPLOYEE_SALARY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cb176d8f-d4b7-42ac-9380-0ec9347d83cf
+                stepCounter: 892efbf2-aac7-49b1-94c3-e894b6ed84f7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38f9a663-89cf-4607-b40f-054b70853302
+          stepCounter: 52c69b56-faba-4dde-ab1c-ccbcb3ae613e
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: EMPLOYEE_MANAGER_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 724d129e-1c12-4a57-a206-6bfada530782
+                stepCounter: 892efbf2-aac7-49b1-94c3-e894b6ed84f7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9c90559b-a9a5-4a53-9180-66573bfb4f5d
+          stepCounter: 52c69b56-faba-4dde-ab1c-ccbcb3ae613e
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: EMPLOYEE_NEW_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 902cb569-7700-4264-ac4e-d8ea07519178
+                stepCounter: 617e43c7-6824-4465-a037-2c86fd19c718
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 40ece1e5-3cec-4c14-b7d5-de83d8f9d0e6
+          stepCounter: 52c69b56-faba-4dde-ab1c-ccbcb3ae613e
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: EMPLOYEE_NEW_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9fd34f19-fb66-4c80-885c-90cc51624887
+                stepCounter: 617e43c7-6824-4465-a037-2c86fd19c718
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e58c511-ac38-4781-b54b-ef79de4f096c
+          stepCounter: 52c69b56-faba-4dde-ab1c-ccbcb3ae613e
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: EMPLOYEE_NEW_SALARY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5d4e7fae-2ff0-44ef-a81a-94846ff8175d
+                stepCounter: 617e43c7-6824-4465-a037-2c86fd19c718
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a0b805f0-41af-4eac-b6da-c4481384c4bb
+          stepCounter: 52c69b56-faba-4dde-ab1c-ccbcb3ae613e
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: EMPLOYEE_NEW_MANAGER_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4671ac50-344b-43b5-94ab-6f3ed1d1c846
+                stepCounter: 617e43c7-6824-4465-a037-2c86fd19c718
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          EMPLOYEE: 892efbf2-aac7-49b1-94c3-e894b6ed84f7
+          EMPLOYEE_NEW: 617e43c7-6824-4465-a037-2c86fd19c718
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAMPLE
+            nodeName: STG_EMPLOYEE
+          - locationName: SAMPLE
+            nodeName: STG_EMPLOYEE_NEW
+        join:
+          joinCondition: FROM {{ ref('SAMPLE', 'STG_EMPLOYEE') }} "EMPLOYEE" JOIN {{ ref('SAMPLE', 'STG_EMPLOYEE_NEW') }} "EMPLOYEE_NEW" ON EMPLOYEE.ID = EMPLOYEE_NEW.ID
+        name: VW_EMPLOYEE_COMBINED
+        noLinkRefs: []
+  name: VW_EMPLOYEE_COMBINED
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node

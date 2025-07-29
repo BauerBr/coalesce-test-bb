@@ -1,0 +1,290 @@
+fileVersion: 1
+id: 9bd950c5-370f-458b-9f14-6763f0327006
+name: opportunity_subset
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Current opportunity details with sales team and product information
+  isMultisource: false
+  locationName: SAMPLE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d4d27eb-d1d3-4ee2-9422-96d572545066
+          stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9d4d27eb-d1d3-4ee2-9422-96d572545066
+                stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+            transform: "\"o\".\"id\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b9cb512-7217-44c1-a60a-a22056b798cc
+          stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+        config: {}
+        dataType: DATE
+        description: ""
+        name: close_date
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1b9cb512-7217-44c1-a60a-a22056b798cc
+                stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+            transform: "\"o\".\"close_date\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ab8b705b-a847-4921-8aea-32bba8356043
+          stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: curr_stage_name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ab8b705b-a847-4921-8aea-32bba8356043
+                stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+            transform: "\"o\".\"stage_name\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58c7e26a-d798-420d-99d6-e9f5533341dd
+          stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: curr_opportunity_source
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 58c7e26a-d798-420d-99d6-e9f5533341dd
+                stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+            transform: "\"o\".\"opportunity_source\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1c8442c-82ff-470a-915d-b895428b028a
+          stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: curr_opportunity_source_static
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b1c8442c-82ff-470a-915d-b895428b028a
+                stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+            transform: "\"o\".\"opportunity_source_static\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ab2d458-7bd7-472f-b98b-d9881ce3d21f
+          stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: curr_net_new_acv
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8ab2d458-7bd7-472f-b98b-d9881ce3d21f
+                stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+            transform: "\"o\".\"net_new_acv\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d7bc107-c101-4aa4-88e9-127335dfdbb6
+          stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: curr_sale_type
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9d7bc107-c101-4aa4-88e9-127335dfdbb6
+                stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+            transform: "\"o\".\"sale_type\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a294e0d1-28e3-4277-ba1a-c4469340f7d7
+          stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: curr_sales_channel
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a294e0d1-28e3-4277-ba1a-c4469340f7d7
+                stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+            transform: "\"o\".\"sales_channel\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec8ea8e0-aae9-4617-b538-6c1f13badd58
+          stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: curr_deal_type
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ec8ea8e0-aae9-4617-b538-6c1f13badd58
+                stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+            transform: "\"o\".\"deal_type__c\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 36f3ba5c-94ee-447c-bbc4-85ca808c42a6
+          stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: curr_endpoint_diversity
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 36f3ba5c-94ee-447c-bbc4-85ca808c42a6
+                stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+            transform: "\"o\".\"endpoint_diversity__c\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e669d87e-9633-4c30-85c0-3b7c2c23a451
+          stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: curr_partner_category
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e669d87e-9633-4c30-85c0-3b7c2c23a451
+                stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+            transform: "\"o\".\"partner_category\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 43466987-0f5e-4f5a-b6a0-d25dbe9fe845
+          stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: curr_type
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 43466987-0f5e-4f5a-b6a0-d25dbe9fe845
+                stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+            transform: "\"o\".\"type\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c942ba39-4d7a-43de-a497-03e48c25d835
+          stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: curr_icp
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c942ba39-4d7a-43de-a497-03e48c25d835
+                stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+            transform: CASE WHEN "o"."icp" THEN 'ICP' END
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0dd02434-83c5-419d-8a6b-756b1d1c2ffa
+          stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: curr_opportunity_partner_name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0dd02434-83c5-419d-8a6b-756b1d1c2ffa
+                stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+            transform: "\"o\".\"opportunity_partner_name\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1dbb4b33-f084-45c9-9833-29bf53407ce3
+          stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: curr_product_edition
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1dbb4b33-f084-45c9-9833-29bf53407ce3
+                stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+            transform: "\"p\".\"product_edition\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b89e73a5-f81b-4b84-8506-67e590654c7e
+          stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: sales_team_reporting
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b89e73a5-f81b-4b84-8506-67e590654c7e
+                stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+            transform: "\"str\".\"sales_team_reporting\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 626c82ff-4fa6-4e36-a531-2c6d3ba82ff7
+          stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: curr_sub_team
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 626c82ff-4fa6-4e36-a531-2c6d3ba82ff7
+                stepCounter: 9bd950c5-370f-458b-9f14-6763f0327006
+            transform: "\"u\".\"sub_team\""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAMPLE
+            nodeName: LKP_SALES_TEAM_MAPPING
+          - locationName: SAMPLE
+            nodeName: opportunity
+          - locationName: SAMPLE
+            nodeName: user
+          - locationName: SAMPLE
+            nodeName: vw_ts_pipeline_master
+        join:
+          joinCondition: |-
+            FROM {{ ref('SAMPLE', 'opportunity') }} "o"
+            LEFT JOIN {{ ref('SAMPLE', 'LKP_SALES_TEAM_MAPPING') }} "str" ON "o"."sales_team" = "str"."sales_team"
+            LEFT JOIN {{ ref('SAMPLE', 'user') }} "u" ON "o"."owner_id" = "u"."id"
+            LEFT JOIN {{ ref('SAMPLE', 'vw_ts_pipeline_master') }} "p" ON "o"."id" = "p"."opportunity_id"
+        name: STG_NODE6
+        noLinkRefs: []
+  name: opportunity_subset
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
