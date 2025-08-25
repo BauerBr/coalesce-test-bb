@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "6"
+mappingDefinitions:
+  SAMPLE:
+    database: BRYAN_DEV
+    schema: DEV_STAGING
+  WORK:
+    database: BRYAN_DEV
+    schema: CELIGO_SRC
+name: New Environment1
+type: Environment
