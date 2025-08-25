@@ -6,6 +6,6 @@ mappingDefinitions:
     schema: DEV_STAGING
   WORK:
     database: BRYAN_DEV
-    schema: CELIGO_SRC
+    schema: TEST1
 name: New Environment1
 type: Environment
