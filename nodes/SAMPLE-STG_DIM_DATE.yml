@@ -1,0 +1,54 @@
+fileVersion: 1
+id: fc60d530-8027-4337-9a19-311bb0a5cd00
+name: STG_DIM_DATE
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAMPLE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f533b30f-7635-4578-b20b-8d035aaa4523
+          stepCounter: fc60d530-8027-4337-9a19-311bb0a5cd00
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fd7278a1-5d4c-4c09-b527-ea871a8683f6
+                stepCounter: dc541b0d-973e-4fdf-89d1-fc0666743e67
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DIM_DATE: dc541b0d-973e-4fdf-89d1-fc0666743e67
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAMPLE
+            nodeName: DIM_DATE
+        join:
+          joinCondition: FROM {{ ref('SAMPLE', 'DIM_DATE') }} "DIM_DATE"
+        name: STG_DIM_DATE
+        noLinkRefs: []
+  name: STG_DIM_DATE
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

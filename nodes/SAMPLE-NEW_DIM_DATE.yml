@@ -1,0 +1,49 @@
+fileVersion: 1
+id: 5f3ddb15-e26f-4036-9412-ec0d0f255a32
+name: NEW_DIM_DATE
+operation:
+  config: {}
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAMPLE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 627f6656-5c83-4d30-8414-7210c5c2000a
+          stepCounter: 5f3ddb15-e26f-4036-9412-ec0d0f255a32
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fd7278a1-5d4c-4c09-b527-ea871a8683f6
+                stepCounter: dc541b0d-973e-4fdf-89d1-fc0666743e67
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DIM_DATE: dc541b0d-973e-4fdf-89d1-fc0666743e67
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAMPLE
+            nodeName: DIM_DATE
+        join:
+          joinCondition: FROM {{ ref('SAMPLE', 'DIM_DATE') }} "DIM_DATE"
+        name: NEW_DIM_DATE
+        noLinkRefs: []
+  name: NEW_DIM_DATE
+  overrideSQL: false
+  schema: ""
+  sqlType: "3"
+  type: sql
+  version: 1
+type: Node
