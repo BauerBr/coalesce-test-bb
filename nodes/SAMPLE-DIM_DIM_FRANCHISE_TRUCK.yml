@@ -13,6 +13,7 @@ operation:
   locationName: SAMPLE
   materializationType: table
   metadata:
+    config: {test: nulll}
     appliedNodeTests: []
     columns:
       - acceptedValues:
