@@ -1,0 +1,358 @@
+fileVersion: 1
+id: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+name: FCT_ORDER_HEADER
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: WORK
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e2c5ad2a-7238-4eda-8403-65bc940fa339
+          stepCounter: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ORDER_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3bcd64a-c991-4eb1-b4a4-de1d9b511ec1
+          stepCounter: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: TRUCK_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e5700507-6a04-4913-9e4e-3a3b5510db48
+          stepCounter: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: LOCATION_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6b8410fb-09eb-4b32-bec9-bd968414b5db
+          stepCounter: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: CUSTOMER_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 33527632-156d-4f0d-98e7-1ca9d4c06ed9
+          stepCounter: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: DISCOUNT_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 02d3820e-ba58-4f25-8a3d-504b936efcc4
+          stepCounter: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: SHIFT_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fed822c8-7098-4172-b210-3cc1f8097740
+          stepCounter: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+        config: {}
+        dataType: TIME(9)
+        defaultValue: ""
+        description: ""
+        name: SHIFT_START_TIME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f4dcd83b-7b01-4960-bcee-7109f7548464
+          stepCounter: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+        config: {}
+        dataType: TIME(9)
+        defaultValue: ""
+        description: ""
+        name: SHIFT_END_TIME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f44f8167-83ac-49f1-b20e-ed9635b272e5
+          stepCounter: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: ORDER_CHANNEL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 099712f8-a2bb-405a-bb13-766e2c37f348
+          stepCounter: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: ORDER_TS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ffb63f3-69c9-4b85-b638-bab31d6a25d8
+          stepCounter: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: SERVED_TS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7818b91f-3bae-4d95-a402-dd5c34668790
+          stepCounter: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+        config: {}
+        dataType: VARCHAR(3)
+        defaultValue: ""
+        description: ""
+        name: ORDER_CURRENCY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30747408-f160-4429-b605-5b61a68338fe
+          stepCounter: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+        config: {}
+        dataType: NUMBER(38,4)
+        defaultValue: ""
+        description: ""
+        name: ORDER_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b2822c6-b8f9-48fa-b849-d2f8f336e5ec
+          stepCounter: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: ORDER_TAX_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7ddca75e-57bb-4ca9-b5b7-744bf4add329
+          stepCounter: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: ORDER_DISCOUNT_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 515bbb66-ce3f-4443-93aa-65186d9995ca
+          stepCounter: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+        config: {}
+        dataType: NUMBER(38,4)
+        defaultValue: ""
+        description: ""
+        name: ORDER_TOTAL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 273f46db-026f-46aa-b9c3-8180567af08f
+          stepCounter: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a6e9ae7-2705-466e-bc7b-7cb2c17e4e51
+          stepCounter: 7f8f6d2a-6480-421d-a0ad-c11e3581e058
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: FCT_ORDER_HEADER
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

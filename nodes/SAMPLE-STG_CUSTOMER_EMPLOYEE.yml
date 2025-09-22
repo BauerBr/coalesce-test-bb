@@ -1,0 +1,172 @@
+fileVersion: 1
+id: 50f45bc4-3f62-45b1-9000-f873d82e6150
+name: STG_CUSTOMER_EMPLOYEE
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Staging node joining CUSTOMER_LOYALTY and EMPLOYEE
+  isMultisource: false
+  locationName: SAMPLE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b02ab738-1c1f-4c14-8c36-5d01e904cff0
+          stepCounter: 50f45bc4-3f62-45b1-9000-f873d82e6150
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: CUSTOMER_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b02ab738-1c1f-4c14-8c36-5d01e904cff0
+                stepCounter: 50f45bc4-3f62-45b1-9000-f873d82e6150
+            transform: CL.CUSTOMER_ID
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 548bdc62-a5e7-4e37-bad6-d6c70d332de6
+          stepCounter: 50f45bc4-3f62-45b1-9000-f873d82e6150
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: FIRST_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 548bdc62-a5e7-4e37-bad6-d6c70d332de6
+                stepCounter: 50f45bc4-3f62-45b1-9000-f873d82e6150
+            transform: CL.FIRST_NAME
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5310e42a-d8a5-4e99-9f1e-24b94bec7d3a
+          stepCounter: 50f45bc4-3f62-45b1-9000-f873d82e6150
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: LAST_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5310e42a-d8a5-4e99-9f1e-24b94bec7d3a
+                stepCounter: 50f45bc4-3f62-45b1-9000-f873d82e6150
+            transform: CL.LAST_NAME
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2bb0325-8a6e-44bc-8c01-8a99e20f68ac
+          stepCounter: 50f45bc4-3f62-45b1-9000-f873d82e6150
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: CITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d2bb0325-8a6e-44bc-8c01-8a99e20f68ac
+                stepCounter: 50f45bc4-3f62-45b1-9000-f873d82e6150
+            transform: CL.CITY
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8082fd2a-ec15-4248-a488-dd177b062722
+          stepCounter: 50f45bc4-3f62-45b1-9000-f873d82e6150
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: COUNTRY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8082fd2a-ec15-4248-a488-dd177b062722
+                stepCounter: 50f45bc4-3f62-45b1-9000-f873d82e6150
+            transform: CL.COUNTRY
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e8206b00-c198-4f1c-8a43-113bb3d648bb
+          stepCounter: 50f45bc4-3f62-45b1-9000-f873d82e6150
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e8206b00-c198-4f1c-8a43-113bb3d648bb
+                stepCounter: 50f45bc4-3f62-45b1-9000-f873d82e6150
+            transform: E.ID
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e970666-9e6d-4023-a6c5-9a3f72e1e471
+          stepCounter: 50f45bc4-3f62-45b1-9000-f873d82e6150
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3e970666-9e6d-4023-a6c5-9a3f72e1e471
+                stepCounter: 50f45bc4-3f62-45b1-9000-f873d82e6150
+            transform: E.NAME
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eae94bb5-99e2-4e6e-88f3-2b2ba6184852
+          stepCounter: 50f45bc4-3f62-45b1-9000-f873d82e6150
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: SALARY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: eae94bb5-99e2-4e6e-88f3-2b2ba6184852
+                stepCounter: 50f45bc4-3f62-45b1-9000-f873d82e6150
+            transform: E.SALARY
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9bd3cb8-527b-4a33-b0f3-fb5a14c219c4
+          stepCounter: 50f45bc4-3f62-45b1-9000-f873d82e6150
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: MANAGER_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b9bd3cb8-527b-4a33-b0f3-fb5a14c219c4
+                stepCounter: 50f45bc4-3f62-45b1-9000-f873d82e6150
+            transform: E.MANAGER_ID
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAMPLE
+            nodeName: CUSTOMER_LOYALTY
+          - locationName: SAMPLE
+            nodeName: EMPLOYEE
+        join:
+          joinCondition: |-
+            FROM (SELECT *, FIRST_NAME AS NAME FROM {{ ref('SAMPLE', 'CUSTOMER_LOYALTY') }}) CL
+            JOIN {{ ref('SAMPLE', 'EMPLOYEE') }} E USING (NAME)
+        name: STG_CUSTOMER_EMPLOYEE
+        noLinkRefs: []
+  name: STG_CUSTOMER_EMPLOYEE
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

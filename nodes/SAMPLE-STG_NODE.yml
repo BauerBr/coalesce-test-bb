@@ -18,14 +18,26 @@ operation:
     appliedNodeTests: []
     columns: []
     cteString: ""
+    description: ""
+    destinationName: ""
     enabledColumnTestIDs: []
+    materializationOption: ""
     sourceMapping:
       - aliases: {}
         customSQL:
           customSQL: ""
-        dependencies: []
+        dependencies:
+          - locationName: SAMPLE
+            nodeName: CUSTOMER_LOYALTY
+          - locationName: SAMPLE
+            nodeName: EMPLOYEE
         join:
-          joinCondition: ""
+          joinCondition: |-
+            FROM {{ ref('SAMPLE', 'EMPLOYEE') }} "EMPLOYEE"
+
+            INNER JOIN {{ ref('SAMPLE', 'CUSTOMER_LOYALTY') }} "CUSTOMER_LOYALTY" 
+
+            USING ("EMPLOYEE_ID")
         name: STG_NODE
         noLinkRefs: []
   name: STG_NODE

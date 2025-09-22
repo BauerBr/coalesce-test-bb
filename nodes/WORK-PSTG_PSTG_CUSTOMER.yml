@@ -1,0 +1,320 @@
+fileVersion: 1
+id: 51971879-e46e-482b-80d5-8ed1b9f77bc3
+name: PSTG_PSTG_CUSTOMER
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: WORK
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6eabd2ba-16c6-4529-8f7c-9a33690126a2
+          stepCounter: 51971879-e46e-482b-80d5-8ed1b9f77bc3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PSTG_PSTG_CUSTOMER_KEY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3a28a38a-3604-4420-8ac3-19dce8458eed
+          stepCounter: 51971879-e46e-482b-80d5-8ed1b9f77bc3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PSTG_CUSTOMER_KEY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8094dd75-b1b4-484b-a6ab-2be828043e9e
+          stepCounter: 51971879-e46e-482b-80d5-8ed1b9f77bc3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: SF*150,000 are populated
+        name: C_CUSTKEY
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9794a19d-b6f9-4996-ae76-efeeecda7601
+          stepCounter: 51971879-e46e-482b-80d5-8ed1b9f77bc3
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        name: test
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 679dc3ee-362f-45b6-9082-d99e9fea6bcf
+          stepCounter: 51971879-e46e-482b-80d5-8ed1b9f77bc3
+        config: {}
+        dataType: VARCHAR(40)
+        defaultValue: ""
+        description: ""
+        name: C_ADDRESS
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d814d02-c87e-4f1d-af26-6f50765aa4ba
+          stepCounter: 51971879-e46e-482b-80d5-8ed1b9f77bc3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: Foreign Key to N_NATIONKEY
+        name: C_NATIONKEY
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9daf160a-c6fd-498c-8788-d6f121c80413
+          stepCounter: 51971879-e46e-482b-80d5-8ed1b9f77bc3
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: ""
+        name: C_PHONE
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: df24e091-a0d1-45d3-b958-273b6668fa74
+          stepCounter: 51971879-e46e-482b-80d5-8ed1b9f77bc3
+        config: {}
+        dataType: NUMBER(12,2)
+        defaultValue: ""
+        description: ""
+        name: C_ACCTBAL
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0f05d6f9-4f80-4c4a-aa44-e02ac6f7aac2
+          stepCounter: 51971879-e46e-482b-80d5-8ed1b9f77bc3
+        config: {}
+        dataType: VARCHAR(10)
+        defaultValue: ""
+        description: ""
+        name: C_MKTSEGMENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 45e338f1-4d1c-4c1e-ae3d-f815ee9cf055
+          stepCounter: 51971879-e46e-482b-80d5-8ed1b9f77bc3
+        config: {}
+        dataType: VARCHAR(117)
+        defaultValue: ""
+        description: ""
+        name: C_COMMENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: af04bfca-1fb3-4d57-b2c6-e6a713c7108b
+          stepCounter: 51971879-e46e-482b-80d5-8ed1b9f77bc3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_VERSION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a6badd6-1152-4eb5-a285-ef9d1c41f71e
+          stepCounter: 51971879-e46e-482b-80d5-8ed1b9f77bc3
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_CURRENT_FLAG
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 62c428cf-7b0b-4508-92f4-f1b5e80ac2b6
+          stepCounter: 51971879-e46e-482b-80d5-8ed1b9f77bc3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_START_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d5af40d4-06aa-48ab-8219-90a840cbf612
+          stepCounter: 51971879-e46e-482b-80d5-8ed1b9f77bc3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_END_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a35e0e7-52b4-40cc-b692-0f61410a4d4d
+          stepCounter: 51971879-e46e-482b-80d5-8ed1b9f77bc3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d86408d-48ea-4f61-a655-c4ea3402c79c
+          stepCounter: 51971879-e46e-482b-80d5-8ed1b9f77bc3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: PSTG_PSTG_CUSTOMER
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

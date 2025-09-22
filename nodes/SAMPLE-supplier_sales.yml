@@ -56,12 +56,10 @@ operation:
       - aliases: {}
         customSQL:
           customSQL: ""
-        dependencies:
-          - locationName: SAMPLE
-            nodeName: sales_base
+        dependencies: []
         join:
-          joinCondition: FROM {{ ref('SAMPLE', 'sales_base') }} GROUP BY SUPPKEY
-        name: STG_NODE
+          joinCondition: ""
+        name: supplier_sales
         noLinkRefs: []
   name: supplier_sales
   overrideSQL: false

@@ -1,0 +1,74 @@
+fileVersion: 1
+id: 90dd952d-4aeb-4ef0-9594-efda10386682
+name: STG_SUPPLIER_COMBINED
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Stage node joining supplier_sales and STG_NODE3
+  isMultisource: false
+  locationName: SAMPLE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4e953111-6825-457c-b1e7-14f6afb0f26d
+          stepCounter: 90dd952d-4aeb-4ef0-9594-efda10386682
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: SUPPKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4e953111-6825-457c-b1e7-14f6afb0f26d
+                stepCounter: 90dd952d-4aeb-4ef0-9594-efda10386682
+            transform: SS.SUPPKEY
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3da25ee2-00e3-40b9-baf6-ccbccd9ef660
+          stepCounter: 90dd952d-4aeb-4ef0-9594-efda10386682
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: SALES_AMT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3da25ee2-00e3-40b9-baf6-ccbccd9ef660
+                stepCounter: 90dd952d-4aeb-4ef0-9594-efda10386682
+            transform: SS.SALES_AMT
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAMPLE
+            nodeName: STG_NODE3
+          - locationName: SAMPLE
+            nodeName: supplier_sales
+        join:
+          joinCondition: |-
+            FROM {{ ref('SAMPLE', 'supplier_sales') }} SS
+            JOIN {{ ref('SAMPLE', 'STG_NODE3') }} SN3 USING (SUPPKEY)
+        name: STG_SUPPLIER_COMBINED
+        noLinkRefs: []
+  name: STG_SUPPLIER_COMBINED
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

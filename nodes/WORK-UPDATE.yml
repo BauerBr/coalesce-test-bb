@@ -1,0 +1,187 @@
+fileVersion: 1
+id: 23e44cae-6199-4d71-aba7-6b8fd5bc105e
+name: UPDATE
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: WORK
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed55004d-169a-4339-ad08-c43099e532a8
+          stepCounter: 23e44cae-6199-4d71-aba7-6b8fd5bc105e
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: C_CUSTKEY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4505b43f-4d4a-4f25-b87e-b5b3aba9af52
+          stepCounter: 23e44cae-6199-4d71-aba7-6b8fd5bc105e
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: C_FIRSTNAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 484af3a3-c006-472d-9d77-ef5546f1f808
+          stepCounter: 23e44cae-6199-4d71-aba7-6b8fd5bc105e
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: C_LASTNAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76baf1e0-147d-42d6-908b-537ee9ecaf35
+          stepCounter: 23e44cae-6199-4d71-aba7-6b8fd5bc105e
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: C_ADDRESS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a91087e4-e609-4911-8923-d6e7144a5ef0
+          stepCounter: 23e44cae-6199-4d71-aba7-6b8fd5bc105e
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: C_NATIONKEY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 197f767d-2a21-407d-81ad-1d94cf6bfed1
+          stepCounter: 23e44cae-6199-4d71-aba7-6b8fd5bc105e
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: C_PHONE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e47c512a-9374-447d-9fd0-7b45b2128d92
+          stepCounter: 23e44cae-6199-4d71-aba7-6b8fd5bc105e
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: C_ACCTBAL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 81084281-0b72-4c6c-83e6-acff5804caa6
+          stepCounter: 23e44cae-6199-4d71-aba7-6b8fd5bc105e
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: C_MKTSEGMENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d4c19a0-db68-41c9-af48-7730aa73f5d5
+          stepCounter: 23e44cae-6199-4d71-aba7-6b8fd5bc105e
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: C_COMMENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: UPDATE
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

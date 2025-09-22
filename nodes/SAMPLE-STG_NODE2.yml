@@ -1,5 +1,5 @@
 fileVersion: 1
-id: a3d5312d-436d-44f7-8a97-27a96ee4eeed
+id: 851972c8-b3d1-4b75-bc5b-250ed9b86347
 name: STG_NODE2
 operation:
   config:
@@ -23,9 +23,15 @@ operation:
       - aliases: {}
         customSQL:
           customSQL: ""
-        dependencies: []
+        dependencies:
+          - locationName: WORK
+            nodeName: STG_CUSTOMER_LOYALTY1
+          - locationName: WORK
+            nodeName: UPDATE
         join:
-          joinCondition: ""
+          joinCondition: |-
+            FROM (SELECT *, CUSTOMER_ID AS CUST_ID FROM {{ ref('WORK', 'STG_CUSTOMER_LOYALTY1') }}) SCL
+            JOIN (SELECT *, C_CUSTKEY AS CUST_ID FROM {{ ref('WORK', 'UPDATE') }}) U USING (CUST_ID)
         name: STG_NODE2
         noLinkRefs: []
   name: STG_NODE2

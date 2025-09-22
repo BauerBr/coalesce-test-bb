@@ -1,0 +1,172 @@
+fileVersion: 1
+id: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+name: STG_CUSTOMER_UPDATE
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Staging node joining STG_CUSTOMER_LOYALTY1 and UPDATE
+  isMultisource: false
+  locationName: SAMPLE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 80334a16-bd4e-4b4d-8407-82f00b052d63
+          stepCounter: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: CUST_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 80334a16-bd4e-4b4d-8407-82f00b052d63
+                stepCounter: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+            transform: SCL.CUST_ID
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cabebe3d-86c2-4aee-aae4-485311bca9a9
+          stepCounter: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: FIRST_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cabebe3d-86c2-4aee-aae4-485311bca9a9
+                stepCounter: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+            transform: SCL.FIRST_NAME
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa4aeb40-c9ef-4f51-8a33-b7c0cdb76815
+          stepCounter: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: LAST_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aa4aeb40-c9ef-4f51-8a33-b7c0cdb76815
+                stepCounter: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+            transform: SCL.LAST_NAME
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 128800a4-f44b-4823-90f1-8a2b44ddbd29
+          stepCounter: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: CITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 128800a4-f44b-4823-90f1-8a2b44ddbd29
+                stepCounter: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+            transform: SCL.CITY
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7cab806b-cd50-4fa4-873c-56ae2bc52244
+          stepCounter: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: COUNTRY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7cab806b-cd50-4fa4-873c-56ae2bc52244
+                stepCounter: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+            transform: SCL.COUNTRY
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0cc3a238-692e-43c0-936c-d1283b722506
+          stepCounter: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: C_FIRSTNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0cc3a238-692e-43c0-936c-d1283b722506
+                stepCounter: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+            transform: U.C_FIRSTNAME
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 982146cc-64f4-4349-9f6e-852028207c60
+          stepCounter: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: C_LASTNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 982146cc-64f4-4349-9f6e-852028207c60
+                stepCounter: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+            transform: U.C_LASTNAME
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4a4b9724-2ff6-4a07-aa56-386fc9f0a28f
+          stepCounter: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: C_ADDRESS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4a4b9724-2ff6-4a07-aa56-386fc9f0a28f
+                stepCounter: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+            transform: U.C_ADDRESS
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 042092b6-6535-4ad0-bbd5-86359b2a29bc
+          stepCounter: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: C_PHONE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 042092b6-6535-4ad0-bbd5-86359b2a29bc
+                stepCounter: 1be48bd5-6b46-4e67-98fb-201094e2ef2e
+            transform: U.C_PHONE
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WORK
+            nodeName: STG_CUSTOMER_LOYALTY1
+          - locationName: WORK
+            nodeName: UPDATE
+        join:
+          joinCondition: |-
+            FROM (SELECT *, CUSTOMER_ID AS CUST_ID FROM {{ ref('WORK', 'STG_CUSTOMER_LOYALTY1') }}) SCL
+            JOIN (SELECT *, C_CUSTKEY AS CUST_ID FROM {{ ref('WORK', 'UPDATE') }}) U USING (CUST_ID)
+        name: STG_CUSTOMER_UPDATE
+        noLinkRefs: []
+  name: STG_CUSTOMER_UPDATE
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

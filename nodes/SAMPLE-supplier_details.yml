@@ -1,5 +1,5 @@
 fileVersion: 1
-id: f4bd5a0b-a9a6-4448-8ae3-386ab238cf50
+id: 5ef3424e-d42f-40eb-a3c6-f6073ab8820d
 name: supplier_details
 operation:
   config:
@@ -19,8 +19,8 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 48c96094-2535-47ba-a1bb-7c4303c5e728
-          stepCounter: f4bd5a0b-a9a6-4448-8ae3-386ab238cf50
+          columnCounter: fb887533-f6ab-4b45-8485-cf9ee51dbb7a
+          stepCounter: 5ef3424e-d42f-40eb-a3c6-f6073ab8820d
         config: {}
         dataType: NUMBER
         description: ""
@@ -29,13 +29,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 48c96094-2535-47ba-a1bb-7c4303c5e728
-                stepCounter: f4bd5a0b-a9a6-4448-8ae3-386ab238cf50
+              - columnCounter: fb887533-f6ab-4b45-8485-cf9ee51dbb7a
+                stepCounter: 5ef3424e-d42f-40eb-a3c6-f6073ab8820d
             transform: S_SUPPKEY
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 17c1e61b-1704-45da-85b4-8864b2c6829e
-          stepCounter: f4bd5a0b-a9a6-4448-8ae3-386ab238cf50
+          columnCounter: c3f589dd-5919-462f-8f65-6dcc591fcc95
+          stepCounter: 5ef3424e-d42f-40eb-a3c6-f6073ab8820d
         config: {}
         dataType: VARCHAR
         description: ""
@@ -44,13 +44,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 17c1e61b-1704-45da-85b4-8864b2c6829e
-                stepCounter: f4bd5a0b-a9a6-4448-8ae3-386ab238cf50
+              - columnCounter: c3f589dd-5919-462f-8f65-6dcc591fcc95
+                stepCounter: 5ef3424e-d42f-40eb-a3c6-f6073ab8820d
             transform: S_NAME || ' ('||N_NAME||')'
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: fc383d85-4173-4b29-b392-44c3c97431c0
-          stepCounter: f4bd5a0b-a9a6-4448-8ae3-386ab238cf50
+          columnCounter: 3a206578-2206-48cf-a852-3ce0de33e90b
+          stepCounter: 5ef3424e-d42f-40eb-a3c6-f6073ab8820d
         config: {}
         dataType: VARCHAR
         description: ""
@@ -59,8 +59,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: fc383d85-4173-4b29-b392-44c3c97431c0
-                stepCounter: f4bd5a0b-a9a6-4448-8ae3-386ab238cf50
+              - columnCounter: 3a206578-2206-48cf-a852-3ce0de33e90b
+                stepCounter: 5ef3424e-d42f-40eb-a3c6-f6073ab8820d
             transform: N_NAME
     cteString: ""
     description: ""
@@ -72,13 +72,16 @@ operation:
         customSQL:
           customSQL: ""
         dependencies:
-          - locationName: SAMPLE
-            nodeName: NATION
-          - locationName: SAMPLE
-            nodeName: SUPPLIER
+          - locationName: TGT_STAGE
+            nodeName: STG_XPRESS_APPS
+          - locationName: TGT_STAGE
+            nodeName: STG_XPRESS_APPS_STATUS
         join:
-          joinCondition: FROM {{ ref('SAMPLE', 'SUPPLIER') }} S JOIN {{ ref('SAMPLE', 'NATION') }} N ON S.S_NATIONKEY = N.N_NATIONKEY
-        name: STG_NODE1
+          joinCondition: |-
+            FROM {{ ref('TGT_STAGE', 'STG_XPRESS_APPS') }} AS "STG_XPRESS_APPS"
+            INNER JOIN {{ ref('TGT_STAGE', 'STG_XPRESS_APPS_STATUS') }} AS "STG_XPRESS_APPS_STATUS" 
+            USING ("DSS_FULLDATE", "LOANNUMBER")
+        name: supplier_details
         noLinkRefs: []
   name: supplier_details
   overrideSQL: false

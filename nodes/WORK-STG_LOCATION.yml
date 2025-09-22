@@ -1,0 +1,149 @@
+fileVersion: 1
+id: 00460cfa-125c-4e5f-9b9e-16102139c0ae
+name: STG_LOCATION
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: WORK
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 042cb097-9d54-4902-902a-b77b517ddd42
+          stepCounter: 00460cfa-125c-4e5f-9b9e-16102139c0ae
+        config: {}
+        dataType: NUMBER(19,0)
+        defaultValue: ""
+        description: ""
+        name: LOCATION_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 64455dd2-46d4-49f5-b4c4-e076df061160
+          stepCounter: 00460cfa-125c-4e5f-9b9e-16102139c0ae
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PLACEKEY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 08b27f9c-f583-4e4f-952b-4383fda8829c
+          stepCounter: 00460cfa-125c-4e5f-9b9e-16102139c0ae
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LOCATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 83545a99-4a65-4d31-8a97-319c8034734e
+          stepCounter: 00460cfa-125c-4e5f-9b9e-16102139c0ae
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: CITY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cbc9f140-6ab9-494b-b6c6-3a64c02c46a1
+          stepCounter: 00460cfa-125c-4e5f-9b9e-16102139c0ae
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: REGION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 431b9775-0355-4ae8-8d39-fa5ff1731344
+          stepCounter: 00460cfa-125c-4e5f-9b9e-16102139c0ae
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: ISO_COUNTRY_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 368ccab0-479c-42bd-b939-d1c3a6bfaf8c
+          stepCounter: 00460cfa-125c-4e5f-9b9e-16102139c0ae
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: COUNTRY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: STG_LOCATION
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
