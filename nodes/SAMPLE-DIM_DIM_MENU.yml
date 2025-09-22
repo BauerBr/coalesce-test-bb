@@ -1,6 +1,7 @@
 fileVersion: 1
 id: 4a28f625-bece-4921-8afe-ad412d9d4ea5
 name: DIM_DIM_MENU
+config: {hi: null}
 operation:
   config:
     postSQL: ""
