@@ -15,7 +15,7 @@ operation:
         columnReference:
           columnCounter: 88dfa586-fec3-411e-ad11-7c46b65000d8
           stepCounter: 8069196e-365f-42f5-8f5f-572d628c492d
-        config: {"test": null}
+        config: {test: null}
         dataType: NUMBER(38,0)
         defaultValue: ""
         description: ""
