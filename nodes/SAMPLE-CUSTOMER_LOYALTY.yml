@@ -4,7 +4,6 @@ name: CUSTOMER_LOYALTY
 operation:
   config:
     subfolder: null
-    test: null
   database: ""
   deployEnabled: true
   description: ""
