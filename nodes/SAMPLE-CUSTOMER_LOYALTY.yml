@@ -2,7 +2,7 @@ fileVersion: 1
 id: 8069196e-365f-42f5-8f5f-572d628c492d
 name: CUSTOMER_LOYALTY
 operation:
-  config: 
+  config:
     subfolder: null
   database: ""
   deployEnabled: true
