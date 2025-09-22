@@ -3,7 +3,6 @@ id: 37d22333-62c9-43c6-b41c-34736fad708f
 name: EMPLOYEE
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: ""
   locationName: SAMPLE
@@ -85,12 +84,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('SAMPLE', 'EMPLOYEE') }}
   name: EMPLOYEE
   schema: ""
   sqlType: Source
-  table: EMPLOYEE
   type: sourceInput
   version: 1
 type: Node
