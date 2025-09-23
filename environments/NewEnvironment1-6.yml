@@ -1,5 +1,11 @@
 fileVersion: 1
 id: "6"
-mappingDefinitions: {}
+mappingDefinitions:
+  SAMPLE:
+    database: BEI_DEV_APP
+    schema: DEV_RAW
+  WORK:
+    database: BRYAN_DEV
+    schema: PUBLIC
 name: New Environment1
 type: Environment

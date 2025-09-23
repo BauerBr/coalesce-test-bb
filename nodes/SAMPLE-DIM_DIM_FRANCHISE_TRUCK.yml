@@ -3,7 +3,6 @@ id: 0dafd067-f496-4204-8413-371055619208
 name: DIM_DIM_FRANCHISE_TRUCK
 operation:
   config:
-    test: null
     postSQL: ""
     preSQL: ""
     testsEnabled: true
