@@ -64,7 +64,7 @@ operation:
           columnCounter: 2409d8b5-dcc8-4487-98a6-bb45b73db335
           stepCounter: bd4a839c-42a9-4df1-a193-f10bfef9ace4
         config: {}
-        dataType: VARCHAR(25)
+        dataType: VARCHAR(20)
         description: ""
         name: test
         nullable: false
@@ -78,7 +78,7 @@ operation:
           columnCounter: 8a3021d3-70dc-44ca-8d84-84855ff1f645
           stepCounter: bd4a839c-42a9-4df1-a193-f10bfef9ace4
         config: {}
-        dataType: VARCHAR(40)
+        dataType: NUMBER(38,0)
         description: ""
         name: C_ADDRESS
         nullable: false
